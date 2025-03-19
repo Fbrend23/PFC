@@ -11,9 +11,9 @@ let scoreCPU = 0;
 
 // Mapping des ID en choix
 const choicesMap = {
-    rock: "pierre",
-    paper: "feuille",
-    scissors: "ciseaux"
+    rock: "Pierre",
+    paper: "Feuille",
+    scissors: "Ciseaux"
 };
 
 // Fonction qui gère le clic sur un choix
@@ -43,9 +43,9 @@ function determineWinner(player, cpu) {
     }
 
     if (
-        (player === "pierre" && cpu === "ciseaux") ||
-        (player === "feuille" && cpu === "pierre") ||
-        (player === "ciseaux" && cpu === "feuille")
+        (player === "Pierre" && cpu === "Ciseaux") ||
+        (player === "Feuille" && cpu === "Pierre") ||
+        (player === "Ciseaux" && cpu === "Feuille")
     ) {
         scorePlayer++;
         return "Joueur";
